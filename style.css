@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 254, 254, 1) 35%,
+    rgba(232, 233, 225, 1) 100%
+  );
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/*LOGO*/
+#logo {
+  height: 250px;
+  margin-right: 20px;
+}
+
+/*Navigation menu*/
+#nav {
+  flex: 1;
+}
+
+#nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+  width: auto;
+}
+
+#nav li {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 15px;
+}
+
+#nav a {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#nav a:hover {
+  color: green;
+}
+
+body {
+  margin: 20px;
+  background-color: #fff9f1;
+  letter-spacing: 1px;
+}
+
+/*Cover picture*/
+#cover {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* /*Titles and paragraphs* */
+h1 {
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: #fff3e5;
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  font-size: 3em;
+}
+
+h2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 2px solid #e0e0e0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+h3 {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+#offers {
+  text-align: center;
+}
+
+p {
+  padding-bottom: 15px;
+  font-size: large;
+  line-height: 1.5em;
+}
+
+#menu {
+  background-color: rgb(254, 254, 244);
+}
+
+/*Offers*/
+#menu img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  padding: 15px;
+  background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin: 20px;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#menu img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+#olcomment li {
+  padding: 10px;
+  margin-left: 20px;
+  font-size: large;
+}
+
+#message {
+  max-width: 380px;
+}
+
+#name,
+#prenom,
+#email {
+  display: flex;
+}
+
+footer {
+  border-top: 2px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #e8e9e1;
+  margin-top: 20px;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo social medias */
+#facebook {
+  width: 60px;
+  height: 60px;
+}
+
+#instagram {
+  width: 60px;
+  height: 60px;
+}
+
+#uber {
+  width: 60px;
+  height: 60px;
+}
+
+#facebook,
+#instagram,
+#uber {
+  margin: 10px;
+}
+
+#mentions {
+  text-decoration: none;
+  color: purple;
+  font-size: large;
+  margin-left: 20px;
+}
+
+#mentions:hover {
+  text-decoration: underline;
+}
+
+form {
+  font-size: large;
+  line-height: 1.5em;
+}
