@@ -4,171 +4,363 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Livraison de repas bio à domicile" />
+    <link rel="icon" type="image/vnd.icon" href="/images/Eco-eats.ico" />
     <link rel="stylesheet" href="/style.css" />
-    <title>Eco eats</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-family: "Material Symbols Outlined";
+        font-weight: normal;
+        font-style: normal;
+        font-size: 48px; /* Preferred icon size */
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Eco eats, le bio s'invite chez vous</title>
   </head>
-  <body>
-    <header>
+
+  <body class="font-[arial] bg-[#fff3e5] leading-7 tracking-wider">
+    <header class="items-center shadow-lg grid grid-cols-6 grid-rows-2">
       <!-- LOGO -->
-      <img src="/images/Eco-eats.jpg" id="logo" alt="Logo Eco eats" />
+      <img
+        width="250"
+        src="/images/Eco-eats.jpg"
+        alt="Logo Eco eats"
+        class="flex-shrink-0 row-span-2"
+      />
       <!-- Menu de navigation -->
-      <nav id="nav">
-        <ul>
-          <li><a href="#apropos">À propos</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#comment">Comment ça marche</a></li>
-          <li><a href="#contact">Formulaire de contact</a></li>
+      <nav
+        class="w-full h-full flex justify-between items-center bg-gradient-to-b from-white/95 to-[#e8e9e1] shadow-lg col-span-5 row-span-2 col-start-2"
+      >
+        <ul class="flex list-none items-center justify-evenly w-full">
+          <li class="inline-block text-lg font-extrabold">
+            <a class="hover:text-green-700" href="#apropos">À propos</a>
+          </li>
+          <li class="inline-block text-lg font-extrabold">
+            <a class="hover:text-green-700" href="#menu">Menu</a>
+          </li>
+          <li class="inline-block text-lg font-extrabold">
+            <a class="hover:text-green-700" href="#comment"
+              >Comment ça marche</a
+            >
+          </li>
+          <li class="inline-block text-lg font-extrabold">
+            <a class="hover:text-green-700" href="#contact"
+              >Formulaire de contact</a
+            >
+          </li>
         </ul>
       </nav>
-    </header>
-    <!-- Main -->
-    <main>
-      <!-- Titre et banderole -->
+      <!-- Banderole -->
       <img
         src="/images/banderolelanding.png"
-        id="cover"
-        alt="images de produits frais et repas bio"
+        alt="images de produits frais et
+        repas bio"
+        class="w-full col-span-6 row-span-2 row-start-3"
       />
-      <h1><b>ECO EATS :</b> Le bio s'invite chez vous !</h1>
+    </header>
+    <main>
+      <div
+        class="col-span-6 text-center bg-[#fff3e5] w-full font-extrabold text-4xl shadow-lg mb-2 h-auto"
+      >
+        <h1><strong>ECO EATS :</strong> Le bio s'invite chez vous !</h1>
+      </div>
       <!-- A propos       -->
-      <section id="apropos">
-        <h2>Qui sommes nous ?</h2>
-        <p>
-          Chez Eco Eats, nous croyons qu’il est possible de bien manger, même
-          quand on manque de temps. Nous proposons une alternative saine,
-          savoureuse et respectueuse de l’environnement pour tous ceux qui
-          veulent des repas bons, équilibrés, à base de produits bio — sans
-          compromis sur le goût ni sur la qualité.
-        </p>
-        <h3>Notre mission</h3>
-        <p>
-          Notre mission, vous offrir des plats 100 % bio, préparés chaque jour
-          avec des ingrédients issus de l’agriculture biologique, de saison,
-          souvent locaux, pour réduire l’empreinte écologique ; des repas
-          nutritifs, élaborés selon les principes d’une alimentation équilibrée
-          : apport suffisant en protéines, bon équilibre entre légumes,
-          féculents, lipides de qualité, etc. ; un service de livraison fiable,
-          rapide, et soucieux de l’environnement (emballages recyclables,
-          circuits courts).
-        </p>
-        <h3>Nos valeurs</h3>
-        <p>
-          Qualité & transparence : nous sélectionnons rigoureusement nos
-          fournisseurs, nous privilégions les filières courtes et les labels bio
-          reconnus, et nous affichons clairement la composition de chaque plat.
-          Santé & équilibre : nous voulons que chaque repas soit une source de
-          plaisir, de bien-être et de nutriments ; que ce soit pour un déjeuner
-          sur le pouce ou un dîner en famille. Responsabilité écologique :
-          limiter le gaspillage, réduire notre empreinte carbone, utiliser des
-          emballages respectueux de l’environnement, soutenir l’agriculture
-          locale. Accessibilité : rendre l’alimentation saine accessible, tant
-          au niveau du prix que de la facilité — pour tous ceux qui ont un
-          emploi du temps chargé, ou qui n’ont pas envie de cuisiner tous les
-          jours.
-        </p>
+      <section>
+        <div class="col-span-6 row-span-3">
+          <div
+            class="flex justify-center items-center col-span-6 text-center w-full font-extrabold text-lg shadow-lg bg-gradient-to-b from-white/95 to-[#e8e9e1]"
+          >
+            <h2>Qui sommes nous ?</h2>
+          </div>
+          <p class="m-8">
+            Chez Eco Eats, nous croyons qu’il est possible de bien manger, même
+            quand on manque de temps. Nous proposons une alternative saine,
+            savoureuse et respectueuse de l’environnement pour tous ceux qui
+            veulent des repas bons, équilibrés, à base de produits bio — sans
+            compromis sur le goût ni sur la qualité.
+          </p>
+        </div>
+        <div class="col-span-6 row-span-3">
+          <div class="m-8 font-extrabold">
+            <h3>Notre mission :</h3>
+          </div>
+          <p class="m-8">
+            Notre mission, vous offrir des plats 100 % bio, préparés chaque jour
+            avec des ingrédients issus de l’agriculture biologique, de saison,
+            souvent locaux, pour réduire l’empreinte écologique ; des repas
+            nutritifs, élaborés selon les principes d’une alimentation
+            équilibrée : apport suffisant en protéines, bon équilibre entre
+            légumes, féculents, lipides de qualité, etc. ; un service de
+            livraison fiable, rapide, et soucieux de l’environnement (emballages
+            recyclables, circuits courts).
+          </p>
+        </div>
+        <div class="col-span-6 row-span-3">
+          <div class="m-8 font-extrabold">
+            <h2>Nos valeurs :</h2>
+          </div>
+          <p class="m-8">
+            <b>Qualité & transparence :</b> nous sélectionnons rigoureusement
+            nos fournisseurs, nous privilégions les filières courtes et les
+            labels bio reconnus, et nous affichons clairement la composition de
+            chaque plat.
+          </p>
+          <p class="m-8">
+            <b>Santé & équilibre :</b> nous voulons que chaque repas soit une
+            source de plaisir, de bien-être et de nutriments ; que ce soit pour
+            un déjeuner sur le pouce ou un dîner en famille. Responsabilité
+            écologique : limiter le gaspillage, réduire notre empreinte carbone,
+            utiliser des emballages respectueux de l’environnement, soutenir
+            l’agriculture locale.
+          </p>
+          <p class="m-8">
+            <b>Accessibilité :</b> rendre l’alimentation saine accessible, tant
+            au niveau du prix que de la facilité — pour tous ceux qui ont un
+            emploi du temps chargé, ou qui n’ont pas envie de cuisiner tous les
+            jours.
+          </p>
+        </div>
       </section>
       <!-- Menus -->
       <section id="menu">
-        <h2 id="offers">Découvrez nos offres !</h2>
-        <img
-          src="/images/offre49.png"
-          class="imgmenu"
-          alt="Découvrez l'offre à 49€"
-        />
-        <img
-          src="/images/offre69.png"
-          class="imgmenu"
-          alt="Découvrez l'offre à 69€"
-        />
-        <img
-          src="/images/offre99.png"
-          class="imgmenu"
-          alt="Découvrez l'offre à 99€"
-        />
-        <img
-          src="/images/offre349.png"
-          class="imgmenu"
-          alt="Découvrez l'offre à 199€"
-        />
+        <div
+          class="flex justify-center m-8 font-extrabold text-2xl bg-gradient-to-b from-white/95 to-[#e8e9e1]"
+        >
+          <h2>Découvrez nos offres !</h2>
+        </div>
+        <div class="col-span-5 row-span-3 col-start-2 row-start-8">
+          <div class="inline-block w-full justify-evenly w-max-300px ml-12">
+            <img
+              class="w-1/5 rounded-[15px] p-4 m-5 inline-block bg-gradient-to-br from-[#f9f9f9] to-[#e0e0e0] shadow-lg transition duration-300 ease-in-out hover:shadow-xl hover:scale-105"
+              src="/images/offre49.png"
+              alt="Découvrez l'offre à 49€"
+            />
+            <img
+              class="w-1/5 rounded-[15px] p-4 m-5 inline-block bg-gradient-to-br from-[#f9f9f9] to-[#e0e0e0] shadow-lg transition duration-300 ease-in-out hover:shadow-xl hover:scale-105"
+              src="/images/offre69.png"
+              alt="Découvrez l'offre à 69€"
+            />
+            <img
+              class="w-1/5 rounded-[15px] p-4 m-5 inline-block bg-gradient-to-br from-[#f9f9f9] to-[#e0e0e0] shadow-lg transition duration-300 ease-in-out hover:shadow-xl hover:scale-105"
+              src="/images/offre99.png"
+              alt="Découvrez l'offre à 99€"
+            />
+            <img
+              class="w-1/5 rounded-[15px] p-4 m-5 inline-block bg-gradient-to-br from-[#f9f9f9] to-[#e0e0e0] shadow-lg transition duration-300 ease-in-out hover:shadow-xl hover:scale-105"
+              src="/images/offre349.png"
+              alt="Découvrez l'offre à 199€"
+            />
+          </div>
+        </div>
       </section>
       <!-- Comment ça marche ? -->
-      <section id="comment">
-        <h2>Comment ça marche ?</h2>
-        <p>
-          Manger sainement n’a jamais été aussi simple ! <br />
+      <section>
+        <div
+          class="flex justify-center m-8 font-extrabold text-2xl bg-gradient-to-b from-white/95 to-[#e8e9e1]"
+        >
+          <h2>Comment ça marche ?</h2>
+        </div>
+
+        <p class="m-8">Manger sainement n’a jamais été aussi simple !</p>
+        <p class="m-8">
           Chez Eco Eats, nous avons pensé chaque étape pour que tu puisses te
           régaler de plats bio, équilibrés et savoureux… sans stress ni perte de
           temps.
         </p>
-        <ol id="olcomment">
-          <li>
-            Tu choisis tes plats chaque semaine : Découvre notre menu de saison,
-            composé de recettes variées, 100 % bio, cuisinées avec des produits
-            frais et locaux. Commande en ligne en quelques clics depuis ton
-            téléphone ou ton ordinateur.
-          </li>
-          <li>
-            Nous cuisinons pour toi ! Nos chefs préparent chaque plat avec soin
-            dans notre cuisine éco-responsable, en suivant des recettes
-            élaborées par des nutritionnistes. Des repas gourmands, équilibrés,
-            faits maison, sans additifs ni conservateurs.
-          </li>
-          <li>
-            Livraison à domicile : Tu choisis ton jour de livraison et ton
-            créneau et on s’occupe du reste. Livraison rapide, dans des
-            emballages éco-conçus, recyclables ou compostables.
-          </li>
-          <li>
-            Tu dégustes & tu profites : Réchauffe ton plat en quelques minutes,
-            et savoure un moment de bien-être, sans avoir à faire les courses ni
-            la vaisselle. Bon pour ton corps, bon pour la planète, et bon pour
-            ton emploi du temps !
-          </li>
-        </ol>
+        <div class="p-8">
+          <!-- Ligne des icônes -->
+          <div class="grid grid-cols-4 gap-6 mb-4">
+            <span
+              class="material-symbols-outlined block mx-auto text-4xl text-amber-600"
+            >
+              hand_meal
+            </span>
+            <span
+              class="material-symbols-outlined block mx-auto text-4xl text-amber-600"
+            >
+              chef_hat
+            </span>
+            <span
+              class="material-symbols-outlined block mx-auto text-4xl text-amber-600"
+            >
+              delivery_truck_speed
+            </span>
+            <span
+              class="material-symbols-outlined block mx-auto text-4xl text-amber-600"
+            >
+              dinner_dining
+            </span>
+          </div>
+
+          <!-- Ligne des textes -->
+          <div class="grid grid-cols-4 gap-6">
+            <!-- Étape 1 -->
+            <div class="border-r-2 border-amber-300 pr-2 ml-2 shadow-xl/30">
+              <h2 class="text-center font-extrabold mb-3">
+                1. Tu choisis tes plats chaque semaine :
+              </h2>
+              <p class="text-justify ml-2 mr-2">
+                Découvre notre menu de saison, composé de recettes variées, 100
+                % bio, cuisinées avec des produits frais et locaux. Commande en
+                ligne en quelques clics depuis ton téléphone ou ton ordinateur.
+              </p>
+            </div>
+
+            <!-- Étape 2 -->
+            <div class="border-r-2 border-amber-300 pr-2 ml-2 shadow-xl/30">
+              <h2 class="text-center font-extrabold mb-3">
+                2. Nous cuisinons pour toi !
+              </h2>
+              <p class="text-justify ml-2 mr-2">
+                Nos chefs préparent chaque plat avec soin dans notre cuisine
+                éco-responsable, en suivant des recettes élaborées par des
+                nutritionnistes. Des repas gourmands, équilibrés, faits maison,
+                sans additifs ni conservateurs.
+              </p>
+            </div>
+
+            <!-- Étape 3 -->
+            <div class="border-r-2 border-amber-300 pr-2 ml-2 shadow-xl/30">
+              <h2 class="text-center font-extrabold mb-3">
+                3. Livraison à domicile :
+              </h2>
+              <p class="text-justify ml-2 mr-2">
+                Tu choisis ton jour de livraison et ton créneau et on s’occupe
+                du reste. Livraison rapide, dans des emballages éco-conçus,
+                recyclables ou compostables.
+              </p>
+            </div>
+
+            <!-- Étape 4 -->
+            <div class="border-r-2 border-amber-300 pr-2 ml-2 shadow-xl/30">
+              <h2 class="text-center font-extrabold mb-3">
+                4. Tu dégustes & tu profites :
+              </h2>
+              <p class="text-justify ml-2 mr-2">
+                Réchauffe ton plat en quelques minutes, et savoure un moment de
+                bien-être, sans avoir à faire les courses ni la vaisselle. Bon
+                pour ton corps, bon pour la planète, et bon pour ton emploi du
+                temps !
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Formulaire de contact -->
-      <section id="contact">
-        <h2>Formulaire de contact :</h2>
-        <form method="post" name="contact">
-          <label for="name">Nom :</label>
-          <input type="text" name="name" id="name" required />
-          <br />
+      <section class="grid grid-cols-6">
+        <form
+          method="post"
+          name="contact"
+          class="m-5 flex col-span-2 row-span-3 col-start-3 -ml-5"
+        >
+          <fieldset class="border-1 mr-200">
+            <legend class="font-extrabold text-2xl ml-2 mb-5">
+              Formulaire de contact :
+            </legend>
+            <label for="name" class="m-2">Nom :</label>
+            <input
+              class="bg-amber-50 shadow-md m-2 block hover:shadow-xl"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Votre nom"
+              required
+            />
 
-          <label for="prenom">Prénom :</label>
-          <input type="text" name="prenom" id="prenom" required />
-          <br />
+            <label for="prenom" class="m-2">Prénom :</label>
+            <input
+              class="bg-amber-50 shadow-md m-2 block hover:shadow-xl"
+              type="text"
+              name="prenom"
+              id="prenom"
+              placeholder="Votre Prénom"
+              required
+            />
 
-          <label for="email">Email :</label>
-          <input type="email" id="email" name="email" required />
-          <br />
+            <label for="email" class="m-2">Email :</label>
+            <input
+              class="bg-amber-50 shadow-md m-2 block hover:shadow-xl"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="exemple@exemple.com"
+              required
+            />
 
-          <!-- Message -->
-          <fieldset id="message">
-            <legend>Votre message :</legend>
-            <textarea name="message" rows="4" cols="50" required></textarea>
+            <!-- Message contact -->
+            <legend class="ml-2">Votre message :</legend>
+            <textarea
+              class="bg-amber-50 shadow-md m-2 hover:shadow-xl"
+              name="message"
+              rows="4"
+              cols="50"
+              placeholder="Saisissez ici votre message"
+              required
+            ></textarea>
+            <div class="flex justify-center shadow-lg">
+              <input
+                type="submit"
+                value="Envoyer"
+                class="bg-amber-400 rounded-lg w-40 mb-2 transform transition duration-300 ease-in-out hover:bg-amber-500 hover:scale-100 hover:shadow-lg"
+              />
+              <input
+                type="reset"
+                value="Reset"
+                class="bg-gray-300 rounded-lg w-40 hover: mb-2 ml-8 transform transition duration-300 ease-in-out hover:bg-gray-400 hover:scale-100 hover:shadow-lg"
+              />
+            </div>
           </fieldset>
-          <br />
-          <input type="submit" value="Envoyer" />
         </form>
       </section>
-      <br />
     </main>
-    <footer>
-      <!-- mentions légales, et réseaux sociaux -->
-      <p>Copyright 2025 <a href="" id="mentions">Mentions Légales</a></p>
-      <!-- Logos réseaux sociaux -->
-      <a href=""
-        ><img src="/images/logo-facebook.png" alt="Logo Facebook" id="facebook"
-      /></a>
-      <a href=""
-        ><img
-          src="/images/Instagram_icon.png.webp"
-          alt="Logo Instagram"
-          id="instagram"
-      /></a>
-      <a href=""
-        ><img src="/images/Uber-logo.png" alt="Logo Uber eats" id="uber"
-      /></a>
+    <footer
+      class="flex flex-col items-center p-4 bg-gray-300 space-y-4 align-middle grid grid-col-10"
+    >
+      <!-- Bloc texte centré -->
+      <div class="text-center col-span-2 col-start-6 row-start-1">
+        <p class="text-sm text-gray-700">&copy; 2025</p>
+        <a href="#" id="mentions" class="text-blue-600 hover:underline text-sm"
+          >Mentions Légales</a
+        >
+      </div>
+      <!-- Logos à droite -->
+      <div
+        class="flex space-x-4 ml-auto align-top col-span-2 col-start-9 row-start-1"
+      >
+        <a href="#">
+          <img
+            src="/images/logo-facebook.png"
+            alt="Logo Facebook"
+            class="w-15 h-15 hover:scale-110 transition-transform"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="/images/Instagram_icon.png.webp"
+            alt="Logo Instagram"
+            class="w-15 h-15 hover:scale-110 transition-transform"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="/images/Uber-logo.png"
+            alt="Logo Uber Eats"
+            class="w-15 h-15 hover:scale-110 transition-transform"
+          />
+        </a>
+      </div>
     </footer>
   </body>
 </html>
